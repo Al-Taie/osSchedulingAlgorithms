@@ -2,10 +2,8 @@
 # CPU Scheduling Algorithms in Operating Systems
 
 > **CPU Scheduling** is a process of determining which process will own CPU for execution while another process is on hold. 
-<br>
-> The main task of CPU scheduling is to make sure that whenever the CPU remains idle, the OS at least select one of the processes available in the ready queue for execution. 
-<br>
-> The selection process will be carried out by the CPU scheduler. 
+<br> The main task of CPU scheduling is to make sure that whenever the CPU remains idle, the OS at least select one of the processes available in the ready queue for execution. 
+<br> The selection process will be carried out by the CPU scheduler. 
 It selects one of the processes in memory that are ready for execution.
 
 ### Types of CPU scheduling Algorithm
@@ -90,4 +88,4 @@ Here are the reasons for using a scheduling algorithm:
 * The CPU uses scheduling to improve its efficiency.
 * It helps you to allocate resources among competing processes.
 * The maximum utilization of CPU can be obtained with multi-programming.
-* The processes which are to be executed are in ready queue.
+* The processes which are to be executed are in ready queue.[[1]](https://www.guru99.com/cpu-scheduling-algorithms.html)
