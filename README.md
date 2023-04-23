@@ -9,12 +9,15 @@ It selects one of the processes in memory that are ready for execution.
 ### Types of CPU scheduling Algorithm
 There are mainly six types of process scheduling algorithms
 
-1. [First Come First Serve (FCFS)](fcfs.py)
-2. [Shortest-Job-First (SJF) Scheduling](sjf.py)
-3. Shortest Remaining Time
-4. Priority Scheduling
-5. [Round Robin Scheduling](round_robin.py)
-6. Multilevel Queue Scheduling
+| Algorithm                     | Theory                                                                    | Implementation             |
+|-------------------------------|---------------------------------------------------------------------------|----------------------------|
+| First Come First Serve (FCFS) | [click me](https://www.guru99.com/fcfs-scheduling.html)                   | [click me](fcfs.py)        |
+| Shortest-Job-First (SJF)      | [click me](https://www.guru99.com/shortest-job-first-sjf-scheduling.html) | [click me](sjf.py)         |
+| Round Robin                   | [click me](https://www.guru99.com/round-robin-scheduling-example.html)    | [click me](round_robin.py) |
+| Priority                      | [click me](https://www.guru99.com/priority-scheduling-program.html)       | [click me](#)              |
+| Multilevel Queue              | [click me](#)                                                             | [click me](#)              |
+| Shortest Remaining Time       | [click me](#)                                                             | [click me](#)              |
+
 
 <br>
 
