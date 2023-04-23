@@ -4,7 +4,7 @@ from utils import print_table, Process
 from utils.examples import FCFS_EXAMPLES
 
 
-def fcfs(processes: List[Process]):
+def fcfs(processes: List[Process]) -> None:
     """
     **First Come First Serve (FCFS)** scheduling algorithm implementation
 

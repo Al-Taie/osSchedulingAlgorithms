@@ -1,4 +1,4 @@
-from process import Process
+from utils import Process
 
 SJF_EXAMPLES = [
     # EXAMPLE 1 (p.10)

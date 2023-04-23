@@ -2,7 +2,7 @@ from statistics import mean
 from prettytable import PrettyTable
 
 
-def print_table(processes):
+def print_table(processes) -> None:
     if not processes:
         return
 
