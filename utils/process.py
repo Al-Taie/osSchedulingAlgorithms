@@ -6,6 +6,7 @@ class Process:
     name: str
     arrival_time: int
     burst_time: int
+    priority: int = field(init=True, default=0)
     waiting_time: int = field(init=False, default=0)
     turnaround_time: int = field(init=False, default=0)
     remaining_time: int = field(init=False, default=0, repr=True)

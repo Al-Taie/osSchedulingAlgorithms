@@ -6,7 +6,7 @@ from utils.ganta_chart import GanttChart
 import re
 
 
-def print_table(processes: List[Process]) -> None:
+def print_table(processes: List[Process], show_priority=False) -> None:
     if not processes:
         return
 
@@ -14,20 +14,28 @@ def print_table(processes: List[Process]) -> None:
     table = PrettyTable()
     table.field_names = [
         "Process",
+        "Priority",
         "Arrival Time",
         "Burst Time",
         "Waiting Time",
         "Turnaround Time"]
+
+    if not show_priority:
+        table.field_names.pop(1)
+
     avg_waiting_time = mean(p.waiting_time for p in processes)
     avg_turnaround_time = mean(p.turnaround_time for p in processes)
 
     for p in processes:
-        table.add_row([
-            p.name,
-            p.arrival_time,
-            p.burst_time,
-            p.waiting_time,
-            p.turnaround_time])
+        data = [p.name,
+                p.priority,
+                p.arrival_time,
+                p.burst_time,
+                p.waiting_time,
+                p.turnaround_time]
+        if not show_priority:
+            data.pop(1)
+        table.add_row(data)
 
     print(table)
     print(f"Average Waiting Time: {avg_waiting_time}", f"\nAverage Turnaround Time: {avg_turnaround_time}")

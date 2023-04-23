@@ -14,7 +14,7 @@ There are mainly six types of process scheduling algorithms
 | First Come First Serve (FCFS) | [click me](https://www.guru99.com/fcfs-scheduling.html)                   | [click me](fcfs.py)        |
 | Shortest-Job-First (SJF)      | [click me](https://www.guru99.com/shortest-job-first-sjf-scheduling.html) | [click me](sjf.py)         |
 | Round Robin                   | [click me](https://www.guru99.com/round-robin-scheduling-example.html)    | [click me](round_robin.py) |
-| Priority                      | [click me](https://www.guru99.com/priority-scheduling-program.html)       | [click me](#)              |
+| Priority                      | [click me](https://www.guru99.com/priority-scheduling-program.html)       | [click me](priority.py)    |
 | Multilevel Queue              | [click me](#)                                                             | [click me](#)              |
 | Shortest Remaining Time       | [click me](#)                                                             | [click me](#)              |
 
