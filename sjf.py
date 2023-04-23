@@ -1,7 +1,7 @@
 from typing import List
 
 from process import Process
-from utils import print_table, EXAMPLES
+from utils import print_table, SJF_EXAMPLES
 
 
 def sjf(processes: List[Process]) -> None:
@@ -29,4 +29,4 @@ def sjf(processes: List[Process]) -> None:
 
 
 if __name__ == '__main__':
-    sjf(EXAMPLES[0])
+    sjf(SJF_EXAMPLES[0])

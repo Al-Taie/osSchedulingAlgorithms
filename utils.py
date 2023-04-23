@@ -30,8 +30,8 @@ def print_table(processes):
     print(f"Average Waiting Time: {avg_waiting_time}", f"\nAverage Turnaround Time: {avg_turnaround_time}")
 
 
-EXAMPLES = [
-    # EXAMPLE 1
+SJF_EXAMPLES = [
+    # EXAMPLE 1 (p.10)
     [
         Process(name="P1", arrival_time=0, burst_time=7),
         Process(name="P2", arrival_time=1, burst_time=5),
@@ -39,7 +39,7 @@ EXAMPLES = [
         Process(name="P4", arrival_time=4, burst_time=3),
     ],
 
-    # EXAMPLE 2
+    # EXAMPLE 2 (p.11)
     [
         Process(name="P1", arrival_time=2, burst_time=6),
         Process(name="P2", arrival_time=5, burst_time=2),
@@ -48,7 +48,7 @@ EXAMPLES = [
         Process(name="P5", arrival_time=4, burst_time=4),
     ],
 
-    # EXAMPLE 3
+    # EXAMPLE 3 (p.13)
     [
         Process(name="P1", arrival_time=0, burst_time=6),
         Process(name="P2", arrival_time=0, burst_time=8),
@@ -56,11 +56,29 @@ EXAMPLES = [
         Process(name="P4", arrival_time=0, burst_time=3),
     ],
 
-    # EXAMPLE 4
+    # EXAMPLE 4 (p.13)
     [
         Process(name="P1", arrival_time=0, burst_time=7),
         Process(name="P2", arrival_time=2, burst_time=4),
         Process(name="P3", arrival_time=4, burst_time=1),
         Process(name="P4", arrival_time=5, burst_time=4),
+    ],
+]
+
+FCFS_EXAMPLES = [
+    # EXAMPLE 1 (p.8)
+    [
+        Process(name="P1", arrival_time=0, burst_time=15),
+        Process(name="P2", arrival_time=2, burst_time=6),
+        Process(name="P3", arrival_time=3, burst_time=7),
+        Process(name="P4", arrival_time=5, burst_time=5),
+    ],
+    # EXAMPLE 2 (p.9)
+    [
+        Process(name="A", arrival_time=0, burst_time=9),
+        Process(name="B", arrival_time=1, burst_time=5),
+        Process(name="C", arrival_time=2, burst_time=2),
+        Process(name="D", arrival_time=3, burst_time=6),
+        Process(name="E", arrival_time=4, burst_time=8),
     ],
 ]
