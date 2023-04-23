@@ -1,7 +1,7 @@
 from typing import List
 
 from utils.examples import ROUND_ROBIN_EXAMPLES
-from utils import Process, print_table
+from utils import Process, print_table, GanttChart, print_gantt_chart
 
 
 def round_robin(processes: List[Process], time_slice: int) -> None:
@@ -13,8 +13,8 @@ def round_robin(processes: List[Process], time_slice: int) -> None:
     `read more <https://www.guru99.com/round-robin-scheduling-example.html>`_
     """
     current_time = 0
+    gantt_chart = []
     executed_queue = []
-    print('Gantt Chart')
 
     while processes:
         processes.sort(key=lambda p: p.next_arrival_time)
@@ -31,14 +31,12 @@ def round_robin(processes: List[Process], time_slice: int) -> None:
             process.waiting_time = current_time - process.arrival_time - process.burst_time
             process.turnaround_time = current_time - process.arrival_time
             executed_queue.append(process)
+        gantt_chart.append(GanttChart(name=process.name, arrival_time=current_time))
 
-        print('|', process.name, end=' ')
-        if not processes:
-            print('|', end='\n\n')
-
+    print_gantt_chart(gantt_chart)
     print_table(executed_queue)
 
 
 if __name__ == '__main__':
-    example = ROUND_ROBIN_EXAMPLES.example1
+    example = ROUND_ROBIN_EXAMPLES.example2
     round_robin(processes=example.processes, time_slice=example.time_slice)
