@@ -1,7 +1,7 @@
 from typing import List
 
-from process import Process
-from utils import FCFS_EXAMPLES, print_table
+from utils import print_table, Process
+from utils.examples import FCFS_EXAMPLES
 
 
 def fcfs(processes: List[Process]):

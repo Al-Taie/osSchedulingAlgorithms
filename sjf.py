@@ -1,7 +1,7 @@
 from typing import List
 
-from process import Process
-from utils import print_table, SJF_EXAMPLES
+from utils import print_table, Process
+from utils.examples import SJF_EXAMPLES
 
 
 def sjf(processes: List[Process]) -> None:
