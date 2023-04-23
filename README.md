@@ -21,7 +21,7 @@ There are mainly six types of process scheduling algorithms
 
 <br>
 
-![Scheduling Algorithms.webp](images%2FScheduling%20Algorithms.webp)
+![Scheduling Algorithms.webp](images%2FScheduling%20Algorithms.png)
 
 ### First Come First Serve
 
