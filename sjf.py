@@ -6,7 +6,10 @@ from utils import print_table, EXAMPLES
 
 def sjf(processes: List[Process]) -> None:
     """
-    Non-Preemptive Shortest Job First (SJF) scheduling algorithm implementation
+    Non-Preemptive **Shortest Job First (SJF)** scheduling algorithm implementation
+
+    ``An algorithm in which the process having the smallest execution time is chosen for the next execution.``
+    `read more <https://www.guru99.com/shortest-job-first-sjf-scheduling.html>`_
     """
     executed = []
     current_time = 0
