@@ -25,5 +25,5 @@ def fcfs(processes: List[Process]) -> None:
 
 
 if __name__ == '__main__':
-    fcfs(FCFS_EXAMPLES[1])
+    fcfs(FCFS_EXAMPLES.example1)
 

@@ -29,4 +29,4 @@ def sjf(processes: List[Process]) -> None:
 
 
 if __name__ == '__main__':
-    sjf(SJF_EXAMPLES[0])
+    sjf(SJF_EXAMPLES.example1)
